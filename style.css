@@ -1,0 +1,111 @@
+:root{
+    --bg:#0f1724; /* deep navy */
+    --card:#0b1220;
+    --muted:#94a3b8;
+    --accent:#ff6b35; /* warm orange */
+    --accent-2:#ffd19a;
+    --glass: rgba(255,255,255,0.04);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{box-sizing:border-box}
+body {
+    font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg,#071026 0%, #081226 50%, #071428 100%);
+    color: #e6eef8;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    min-height:100vh;
+}
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    padding:18px 28px;
+    background:linear-gradient(90deg, rgba(255,107,53,0.06), transparent);
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    position:sticky;
+    top:0;
+    backdrop-filter: blur(6px);
+}
+
+.brand{
+    display:flex;align-items:center;gap:12px
+}
+
+.brand h1{font-size:20px;margin:0;color:var(--accent-2);letter-spacing:0.2px}
+
+nav{
+    display:flex;align-items:center;gap:14px
+}
+
+nav a{
+    color:var(--muted);
+    text-decoration:none;
+    font-weight:600;
+    padding:8px 12px;
+    border-radius:8px;
+    transition:all .18s ease;
+}
+
+nav a:hover{color: #fff;background: rgba(255,255,255,0.03);transform:translateY(-2px)}
+
+.nav-toggle{display:none;background:transparent;border:0;color:var(--muted);font-size:20px}
+
+.hero{
+    margin:20px auto 10px;
+    max-width:1100px;
+    background: linear-gradient(180deg, rgba(255,107,53,0.06), rgba(255,107,53,0.02));
+    padding:44px 36px;
+    border-radius:14px;
+    box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+    text-align:center;
+}
+
+.hero h2{font-size:28px;margin:0 0 10px;color:#fff}
+.hero p{color:var(--muted);margin:0 0 18px}
+.cta{
+    display:inline-flex;gap:10px;align-items:center;padding:10px 16px;border-radius:10px;background:var(--accent);color:#071428;font-weight:700;text-decoration:none
+}
+.search{display:inline-flex;padding:6px;background:rgba(255,255,255,0.03);border-radius:999px;margin-left:10px}
+.search input{background:transparent;border:0;color:#fff;padding:8px;outline:none;width:220px}
+
+.content, .place, .review{
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    padding:18px;
+    margin:16px auto;
+    border-radius:10px;
+    max-width:1100px;
+    box-shadow: 0 6px 24px rgba(2,6,23,0.55);
+}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:12px}
+.card{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));transition:transform .18s,box-shadow .18s;border:1px solid rgba(255,255,255,0.03)}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(2,6,23,0.6)}
+.card h4{margin:0 0 6px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+
+footer{max-width:1100px;margin:22px auto;border-radius:10px;padding:18px;background:transparent;color:var(--muted);text-align:center}
+
+.muted{color:var(--muted)}
+
+.timings-table{width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden}
+.timings-table th, .timings-table td{padding:12px;border-bottom:1px solid rgba(255,255,255,0.03);text-align:left}
+.timings-table th{background:rgba(255,255,255,0.02);color:var(--muted);font-weight:600}
+
+@media (max-width:720px){
+    .nav-toggle{display:block}
+    nav{position:fixed;right:12px;top:64px;background:var(--card);padding:12px;border-radius:10px;display:none;flex-direction:column;min-width:160px}
+    nav.show{display:flex}
+    .hero{padding:28px 18px;margin:12px}
+    .brand h1{font-size:16px}
+}
+
+/* subtle entrance */
+.fade-in{opacity:0;transform:translateY(6px);animation:fadeIn .6s forwards ease-out}
+@keyframes fadeIn{to{opacity:1;transform:none}}
