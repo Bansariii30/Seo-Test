@@ -449,6 +449,52 @@
                 max-width: 90%;
             }
         }
+
+        #blog {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+
+#blog h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.blog-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.blog-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.blog-card a {
+  color: #e63946;
+  font-weight: 600;
+  text-decoration: none;
+}
+
     </style>
     <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://ahmedabad-street-food.vercel.app/" />
@@ -472,6 +518,7 @@
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#locations">Locations</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
                 </ul>
             </nav>
         </div>
@@ -607,6 +654,44 @@
             </p>
         </div>
     </section>
+
+    <section id="blog">
+  <div class="container">
+    <h2>Our <span>Latest Blogs</span></h2>
+
+    <div class="blog-grid">
+
+      <article class="blog-card">
+        <h3>Street Food Guide for First-Time Visitors to Ahmedabad</h3>
+        <p>
+          Discover the best street food in Ahmedabad, famous snacks,
+          night food markets, and tourist-friendly food spots.
+        </p>
+        <a href="blog1.html">Read More</a>
+      </article>
+
+      <article class="blog-card">
+        <h3>Why Gujaratis Love Fafda Jalebi for Breakfast | Ahmedabad Street Food</h3>
+        <p>
+    A cultural and food tradition of Gujarat explained, focusing on
+          the iconic Fafda-Jalebi breakfast combo.
+        </p>
+        <a href="fafda-jalebi-breakfast.html">Read More</a>
+      </article>
+
+      <article class="blog-card">
+        <h3>Why Gujaratis Add Cheese to Almost Everything</h3>
+        <p>
+       The fun, flavorful story behind Ahmedabad’s cheese obsession
+        </p>
+        <a href="why-gujaratis-add-cheese.html">Read More</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
 
     <footer>
         <div class="social-icons">
