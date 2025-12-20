@@ -33,20 +33,20 @@
             line-height: 1.8;
         }
 
-        header {
+        .blog-header {
             background: #7a7a7a;
             color: #fff;
             padding: 50px 20px;
             text-align: center;
         }
 
-        header h1 {
+        .blog-header h1 {
             font-family: 'Merriweather', serif;
             font-size: 2.6rem;
             margin-bottom: 10px;
         }
 
-        header p {
+        .blog-header p {
             font-size: 1.1rem;
             opacity: 0.9;
         }
@@ -115,11 +115,11 @@
 </head>
 
 <body>
-
-<header>
+     <div id="headers"></div>
+ <div class="blog-header">
     <h1>Why Gujaratis Love Fafda Jalebi for Breakfast</h1>
     <p>A cultural and food tradition of Gujarat explained</p>
-</header>
+</div>
 
 <main>
 
@@ -216,3 +216,10 @@
 
 </body>
 </html>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script>
+      $(function() {
+         $("#headers").load("headers.html");
+      });
+   </script>

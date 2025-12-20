@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -37,7 +38,7 @@
             background-color: var(--background-light); /* Lighter background */
             color: var(--text-color);
         }
-        header {
+        .blog-header {
             background-color: var(--primary-color);
             color: var(--background-white);
             padding: 40px 20px; /* Increased padding */
@@ -45,13 +46,13 @@
             /* Optional: subtle shadow for depth */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        header h1 {
+        .blog-header h1 {
             font-family: 'Merriweather', serif; /* Use a different font for the main title */
             font-weight: 700;
             margin-bottom: 5px;
             font-size: 2.5em; /* Larger title */
         }
-        header p {
+        .blog-header p {
             font-size: 1.1em;
             opacity: 0.9;
         }
@@ -128,15 +129,21 @@
             padding-left: 10px;
             border-left: 2px solid #ccc;
         }
+
+        
     </style>
+    
+    
 </head>
 <body>
+ <div id="headers"></div>
 
-<header>
+    <div class="blog-header">
     <h1>Street Food Guide for First-Time Visitors to Ahmedabad</h1>
     <p>Your complete beginner guide to street food in Ahmedabad</p>
-</header>
 
+ </div>
+ 
 <main>
 
     <p>Ahmedabad is a paradise for food lovers, especially if you enjoy vegetarian street food. For first-time visitors, exploring <strong>street food in Ahmedabad</strong> is not just about eating—it’s about experiencing the city’s culture, traditions, and vibrant food markets.</p>
@@ -262,3 +269,11 @@
 
 </body>
 </html>
+
+ 
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script>
+      $(function() {
+         $("#headers").load("headers.html");
+      });
+   </script>
