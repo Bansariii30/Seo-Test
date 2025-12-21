@@ -1,8 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+
   <url>
-    <loc>https://ahmedabad-street-food.vercel.app/</loc>
-    <lastmod>2025-12-15</lastmod>
-    <priority>1.0</priority>
+    <loc>https://ahmedabad-street-food.vercel.app/index.html</loc>
   </url>
+
+  <url>
+    <loc>https://ahmedabad-street-food.vercel.app/ahmedabad-street-food-guide.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ahmedabad-street-food.vercel.app/fafda-jalebi-breakfast.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ahmedabad-street-food.vercel.app/why-gujaratis-add-cheese.html</loc>
+  </url>
+
 </urlset>
